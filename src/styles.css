@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+.primary-bg-color {
+    background-color: #FFEBC1;
+}
+
+.primary-btn-color {
+    background-color: #FEEAD9;
+}
+
+.default-font {
+    font-family: 'Fredoka One', cursive;
+}
