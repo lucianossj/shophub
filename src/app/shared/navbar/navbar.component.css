@@ -9,8 +9,8 @@
     padding: 15px 0 0 0;
     border-radius: 100px;
     border-color: #fff;
-    border-bottom: groove;
     display: flex;
     justify-content: center;
     margin-top: -15px;
+    border-style: double;
 }

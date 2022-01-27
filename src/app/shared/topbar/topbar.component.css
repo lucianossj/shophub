@@ -1,0 +1,32 @@
+.bar {
+    height: 200px;
+    background-image: linear-gradient(to bottom, #FDBE0B, #FED997);
+    border-radius: 40px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.sorting {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showing-items-text {
+    font-size: 10px;
+}
+
+.sorting-select {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+}

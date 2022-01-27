@@ -1,0 +1,13 @@
+
+.box {
+    background-image: radial-gradient(circle, #FED997, #fcecd1, #fff);
+    border-radius: 5px;
+}
+
+.product-img {
+    border-radius: 35px;
+}
+
+.product-title {
+    font-weight: bolder;
+}
