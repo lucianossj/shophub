@@ -1,0 +1,162 @@
+[
+    {
+        "code": 123,
+        "name": "Shoe ABC Air",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "price": 239.0,
+        "category": "Shoes",
+        "images": [
+            "https://www.pngfind.com/pngs/m/240-2408892_sports-shoes-png-pics-nike-all-sport-shoes.png",
+            "https://www.pngfind.com/pngs/m/48-481123_nike-running-shoes-png-picture-nike-sports-shoes.png",
+            "https://e7.pngegg.com/pngimages/820/94/png-clipart-shoe-nike-air-max-sneakers-running-running-shoes-orange-outdoor-shoe.png"
+        ],
+        "sizes": [
+            "36", "38", "40", "42"
+        ],
+        "colors": [
+            {
+                "name": "Orange",
+                "hexadecimal": "#FF5733"
+            },
+            {
+                "name": "Green",
+                "hexadecimal": "#5FB524"
+            },
+            {
+                "name": "Light Blue",
+                "hexadecimal": "#24B587"
+            }
+        ]
+    },
+    {
+        "code": 456,
+        "name": "Shoe DEF Stars",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+        "price": 159.99,
+        "category": "Shoes",
+        "images": [
+            "https://e7.pngegg.com/pngimages/372/993/png-clipart-chuck-taylor-all-stars-high-top-converse-sneakers-shoe-tow-mater-white-converse.png",
+            "https://cdn.imgbin.com/4/2/4/imgbin-converse-chuck-taylor-all-stars-high-top-sneakers-shoe-colorful-boots-HPPrmDE06C8HpQfyTYQBJmYPt.jpg",
+            "https://img2.gratispng.com/20180709/htw/kisspng-sneakers-chuck-taylor-all-stars-shoe-converse-whit-converse-all-star-logo-vector-5b43522e17eef8.116796891531138606098.jpg"
+        ],
+        "sizes": [
+            "34", "36", "48", "44"
+        ],
+        "colors": [
+            {
+                "name": "Purple",
+                "hexadecimal": "#AC24B5"
+            },
+            {
+                "name": "Blue",
+                "hexadecimal": "#4C24B5"
+            },
+            {
+                "name": "White",
+                "hexadecimal": "#fff"
+            }
+        ]
+    },
+    {
+        "code": 789,
+        "name": "Shoe GHI Shocks",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+        "price": 159.99,
+        "category": "Shoes",
+        "images": [
+            "https://w7.pngwing.com/pngs/514/553/png-transparent-adidas-superstar-hoodie-sneakers-shoe-adidas-white-leather-outdoor-shoe.png",
+            "https://img2.gratispng.com/20180408/rke/kisspng-adidas-stan-smith-adidas-superstar-sneakers-adidas-men-shoes-5ac9bee791f512.2657510815231710475979.jpg"
+        ],
+        "sizes": [
+            "34", "36"
+        ],
+        "colors": [
+            {
+                "name": "Black",
+                "hexadecimal": "#000"
+            },
+            {
+                "name": "Blue",
+                "hexadecimal": "#11a"
+            },
+            {
+                "name": "Green",
+                "hexadecimal": "#1a1"
+            }
+        ]
+    },
+    {
+        "code": 987,
+        "name": "T-Shirt USA",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "price": 239.0,
+        "category": "Clothes",
+        "images": [
+            "https://www.pngfind.com/pngs/m/21-216374_american-flag-usa-gildan-ultra-cotton-t-shirt.png",
+            "https://www.bypeople.com/wp-content/uploads/2021/01/vector-tshirt-designs-american-surfing-veteran-deals-bypeople-new-50.png"
+        ],
+        "sizes": [
+            "PP", "P", "M", "G", "GG", "XXG"
+        ],
+        "colors": [
+            {
+                "name": "Pink",
+                "hexadecimal": "#FF57f3"
+            },
+            {
+                "name": "Yellow",
+                "hexadecimal": "#FaB524"
+            },
+            {
+                "name": "Light Green",
+                "hexadecimal": "#a4B587"
+            }
+        ]
+    },
+    {
+        "code": 654,
+        "name": "T-Shirt Barcelona",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+        "price": 239.0,
+        "category": "Clothes",
+        "images": [
+            "https://e7.pngegg.com/pngimages/187/688/png-clipart-fc-barcelona-t-shirt-la-liga-jersey-kit-fc-barcelona-tshirt-football-boot.png"
+        ],
+        "sizes": [
+            "P", "M"
+        ],
+        "colors": [
+            {
+                "name": "Red",
+                "hexadecimal": "#E64C1B"
+            },
+            {
+                "name": "Blue",
+                "hexadecimal": "#1B49E6"
+            }
+        ]
+    },
+    {
+        "code": 321,
+        "name": "T-Shirt Barcelona",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+        "price": 239.0,
+        "category": "Clothes",
+        "images": [
+            "https://w7.pngwing.com/pngs/441/766/png-transparent-liverpool-f-c-t-shirt-premier-league-jersey-egypt-national-football-tshirt-logo-active-shirt.png"
+        ],
+        "sizes": [
+            "M", "G"
+        ],
+        "colors": [
+            {
+                "name": "Red",
+                "hexadecimal": "#E64C1B"
+            },
+            {
+                "name": "Blue",
+                "hexadecimal": "#1B49E6"
+            }
+        ]
+    }
+]

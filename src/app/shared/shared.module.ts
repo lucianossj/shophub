@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { RoundedButtonComponent } from './rounded-button/rounded-button.component';
 import { RouteService } from './service/route.service';
+import { LoadDataService } from './service/load-data.service';
 
 
 
@@ -22,7 +23,8 @@ import { RouteService } from './service/route.service';
     RoundedButtonComponent
   ],
   providers: [
-    RouteService
+    RouteService,
+    LoadDataService
   ]
 })
 export class SharedModule { }

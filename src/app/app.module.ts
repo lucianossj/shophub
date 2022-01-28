@@ -9,6 +9,7 @@ import { ShopModule } from './shop/shop.module';
 import { HomeModule } from './home/home.module';
 import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactModule } from './contact/contact.module';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    HttpClientModule,
     SharedModule,
     HomeModule,
     ShopModule,
