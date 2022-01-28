@@ -2,7 +2,7 @@
 <div class="bar">
 
     <div class="container">
-        <div class="row mt-4" *ngIf="activeRoute != '/products' && activeRoute != '/product-details'">
+        <div class="row mt-4" *ngIf="activeRoute != '/products' && !activeRoute.includes('/product-details')">
             <div class="col-md-4 navigation">
                 <div class="m-3">
                     <!-- <span>  </span> / <span>  </span> -->

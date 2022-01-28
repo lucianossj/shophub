@@ -18,7 +18,7 @@ export class ProductBoxComponent implements OnInit {
   }
 
   get productImage(): string {
-    return this.product.images[0];
+    return this.product?.images[0].src;
   }
 
 }

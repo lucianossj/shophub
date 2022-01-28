@@ -11,12 +11,24 @@
                         <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-12 p-5">
-                                    <h3 class="d-flex justify-content-center"> Popular Shoes Trend </h3>
+                                    <h3 class="d-flex justify-content-center"> {{ product?.name }} </h3>
                                 </div>
                             </div>
                             <div class="row m-3">
                                 <div class="col-md-12 pb-5">
-                                    <span class="d-flex justify-content-center"> Nike's Air Force 1s were among the most popular sneakers this year. </span>
+                                    <span class="d-flex justify-content-center"> {{ product?.description.slice(0, 120) + '...' }} </span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div
+                                    class="col-md-6"
+                                    *ngFor="let image of product.images"
+                                    (click)="selectImage(image, product.images)">
+                                    <img
+                                        class="product-images"
+                                        [ngClass]="{'product-image-selected': image.selected}"
+                                        width="100"
+                                        [src]="image.src">
                                 </div>
                             </div>
     
@@ -27,11 +39,11 @@
                                 <div class="col-md-12">
                                     <img
                                     class="p-3 mt-5 mb-5 img-size"
-                                    src="https://images.tcdn.com.br/img/img_prod/790073/tenis_adidas_grandcourt_ee7968_177_1_20200807111214.png">
+                                    [src]="selectedImage">
 
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h5 class="primary-text d-flex justify-content-center product-price"> $ 239.00 </h5>
+                                            <h5 class="primary-text d-flex justify-content-center product-price"> {{ product.price | currency }} </h5>
                                         </div>
                                     </div>
                                 </div>
@@ -43,10 +55,12 @@
                                 <div class="col-md-4">
                                     <span> Color: </span>
                                 </div>
-                                <p class="col-md-1 color mx-1"></p>
-                                <p class="col-md-1 color mx-1"></p>
-                                <p class="col-md-1 color mx-1"></p>
-                                <p class="col-md-1 color mx-1"></p>
+                                <p
+                                    *ngFor="let color of product.colors"
+                                    class="col-md-1 color mx-1"
+                                    [style.background-color]="color.hexadecimal"
+                                    [ngClass]="{'selected-color': color.selected}"
+                                    (click)="selectColor(color, product.colors)"></p>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
@@ -54,17 +68,24 @@
                                 </div>
                                 <div class="col-dm-6">
                                     <div class="row">
-                                        <p class="col size mx-1 d-flex justify-content-center"> 36 </p>
-                                        <p class="col size mx-1 d-flex justify-content-center"> 38 </p>
-                                        <p class="col size mx-1 d-flex justify-content-center"> 40 </p>
-                                        <p class="col size mx-1 d-flex justify-content-center"> 42 </p>
+                                        <p
+                                            *ngFor="let size of product.sizes"
+                                            class="col size mx-1 d-flex justify-content-center"
+                                            [ngClass]="{'selected-size': size.selected}"
+                                            (click)="selectSize(size, product.sizes)"
+                                            > {{ size.size }} </p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row mt-5">
                                 <div class="col-md-12">
-                                    <button class="btn btn-lg btn-dark text-warning btn-add-cart"> Add to Cart </button>
+                                    <button 
+                                        class="btn btn-lg btn-dark text-warning btn-add-cart"
+                                        [disabled]="!addButtonIsEnable"
+                                        (click)=addToCart()>
+                                        <i class="fa fa-plus-circle"></i>
+                                        Add to Cart </button>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,8 @@
 
 export class ColorModel {
     constructor(
-        private name: string,
-        private hexadecimal: string
+        public name: string,
+        public hexadecimal: string,
+        public selected: boolean = false
     ) {}
 }

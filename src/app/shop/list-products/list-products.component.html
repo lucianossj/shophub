@@ -3,7 +3,9 @@
     <app-topbar [title]="'Shop'"></app-topbar>
     <div class="row p-4 margin-boxes">
         <div class="col-md-4 mt-2" *ngFor="let product of products">
-            <app-product-box [product]="product"></app-product-box>
+            <app-product-box
+                [product]="product"
+                (click)="seeProductDetails(product.code)"></app-product-box>
         </div>
     </div>
 </div>

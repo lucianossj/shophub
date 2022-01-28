@@ -19,8 +19,8 @@ export class ListProductsComponent implements OnInit {
     this.products = this.shopService.products;
   }
 
-  public test(): void {
-    console.log('tst');
+  public seeProductDetails(code: number): void {
+    this.shopService.redirectToProductDetails(code);
   }
 
 }
