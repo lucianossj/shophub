@@ -10,6 +10,7 @@ import { HomeModule } from './home/home.module';
 import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     HomeModule,
     ShopModule,

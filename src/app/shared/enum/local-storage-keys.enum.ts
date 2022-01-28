@@ -1,4 +1,6 @@
 
 export enum LocalStorageKeysEnum {
-    PRODUCTS = 'ls.products'
+    CLIENTS = 'ls.clients',
+    PRODUCTS = 'ls.products',
+    SHOPPING_CART = 'ls.shoppingCart'
 }

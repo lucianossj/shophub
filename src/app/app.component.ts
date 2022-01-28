@@ -18,6 +18,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public ngOnInit(): void {
     this.getProductsData();
+    this.getCartData();
   }
 
   public ngOnDestroy(): void {
@@ -28,11 +29,23 @@ export class AppComponent implements OnInit, OnDestroy {
     this.subscription.add(this.productsDataSubscription);
   }
 
+  private getCartData(): void {
+    this.subscription.add(this.cartDataSubscription);
+  }
+
   get productsDataSubscription(): Subscription {
     return this.loadDataService.getProducts()
       .subscribe(
         () => console.log('Success to load products data'),
         err => console.error('Success to load products data', err)
+      );
+  }
+
+  get cartDataSubscription(): Subscription {
+    return this.loadDataService.getShoppingCart()
+      .subscribe(
+        () => console.log('Success to load cart data'),
+        err => console.error('Success to load cart data', err)
       );
   }
 

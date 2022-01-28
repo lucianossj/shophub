@@ -13,6 +13,9 @@ export class RoundedButtonComponent implements OnInit {
   @Input()
   public size: number = 0;
   
+  @Input()
+  public totalQty: number = 0
+
   constructor() { }
 
   ngOnInit(): void {

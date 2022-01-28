@@ -6,6 +6,7 @@ import { ProductBoxComponent } from './product-box/product-box.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RelatedProductsComponent } from './related-products/related-products.component';
 import { ShopService } from './service/shop.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +19,8 @@ import { ShopService } from './service/shop.service';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports: [
     ListProductsComponent,

@@ -78,6 +78,34 @@
                                 </div>
                             </div>
 
+                            <div class="row mt-5 d-flex justify-content-center">
+                                <div class="col-md-4">
+                                    <button 
+                                        class="btn btn-sm btn-success btn-add-cart"
+                                        [disabled]="!minusButtonIsEnable"
+                                        (click)=decrementQty()>
+                                        <i class="fa fa-minus"></i></button>
+                                </div>
+                                <div class="col-md-4">
+                                    <form [formGroup]="qtyForm">
+                                        <input
+                                        formControlName="qty"
+                                        type="number"
+                                        class="form-control input-qty"
+                                        [disabled]="!propertiesIsSelected"
+                                        (change)="validateQuantity()"
+                                        (focusout)="validateQuantity()">
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <button 
+                                        class="btn btn-sm btn-success btn-add-cart"
+                                        [disabled]="!plusButtonIsEnable"
+                                        (click)=incrementQty()>
+                                        <i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+
                             <div class="row mt-5">
                                 <div class="col-md-12">
                                     <button 

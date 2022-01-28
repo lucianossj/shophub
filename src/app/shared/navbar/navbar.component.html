@@ -29,13 +29,14 @@
         <div class="col-md-3 offset-md-2">
             <div class="row mt-4">
                 <div class="col-md-6">
-                    <span> $ 239.00 </span>
+                    <span> {{ totalPrice | currency }} </span>
                 </div>
                 <div class="col-md-6">
                     <app-rounded-button
                         class="d-flex justify-content-end"
                         [faIcon]="'fa fa-shopping-bag'"
-                        [size]="50"></app-rounded-button>
+                        [size]="50"
+                        [totalQty]="totalQty"></app-rounded-button>
                 </div>
             </div>
         </div>
