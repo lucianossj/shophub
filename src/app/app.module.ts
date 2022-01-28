@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ShopModule } from './shop/shop.module';
+import { HomeModule } from './home/home.module';
+import { BlogModule } from './blog/blog.module';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ShopModule } from './shop/shop.module';
     AppRoutingModule,
     FontAwesomeModule,
     SharedModule,
-    ShopModule
+    HomeModule,
+    ShopModule,
+    BlogModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

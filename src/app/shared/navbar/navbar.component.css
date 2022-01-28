@@ -14,3 +14,11 @@
     margin-top: -15px;
     border-style: double;
 }
+
+.route-active {
+    color: coral;
+}
+
+.route-inactive {
+    color: black;
+}

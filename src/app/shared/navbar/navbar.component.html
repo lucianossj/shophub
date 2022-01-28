@@ -8,10 +8,22 @@
         </div>
         <div class="col-md-3">
             <div class="row mt-4">
-                <div class="col-md-3"> Home </div>
-                <div class="col-md-3"> Shop </div>
-                <div class="col-md-3"> Blog </div>
-                <div class="col-md-3"> Contact </div>
+                <div
+                    class="col-md-3"
+                    (click)="redirectToHome()"
+                    [ngClass]="{'route-active': verifyIsActive('/home')}"> Home </div>
+                <div
+                    class="col-md-3"
+                    (click)="redirectToShop()"
+                    [ngClass]="{'route-active': verifyIsActive('/products')}"> Shop </div>
+                <div
+                    class="col-md-3"
+                    (click)="redirectToBlog()"
+                    [ngClass]="{'route-active': verifyIsActive('/blog')}"> Blog </div>
+                <div
+                    class="col-md-3"
+                    (click)="redirectToContact()"
+                    [ngClass]="{'route-active': verifyIsActive('/contact')}"> Contact </div>
             </div>
         </div>
         <div class="col-md-3 offset-md-2">
