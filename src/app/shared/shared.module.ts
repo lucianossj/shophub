@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { RoundedButtonComponent } from './rounded-button/rounded-button.component';
+import { RouteService } from './service/route.service';
 
 
 
@@ -19,6 +20,9 @@ import { RoundedButtonComponent } from './rounded-button/rounded-button.componen
     NavbarComponent,
     TopbarComponent,
     RoundedButtonComponent
+  ],
+  providers: [
+    RouteService
   ]
 })
 export class SharedModule { }

@@ -2,7 +2,7 @@
 <div class="bar">
 
     <div class="container">
-        <div class="row mt-4">
+        <div class="row mt-4" *ngIf="activeRoute == '/products' || activeRoute == '/'">
             <div class="col-md-4 navigation">
                 <div class="m-3">
                     <span> Shop </span> / <span> Products </span>
@@ -15,17 +15,38 @@
             </div>
             <div class="col-md-4">
                 <div class="row mt-3">
-                        <div class="col-md-6">
-                            <span class="showing-items-text"> Showing 1-12 of 36 products </span>
-                        </div>
-                        <div class="col-md-6">
-                            <select class="form-select form-select-sm sorting-select">
-                                <option> Default sorting </option>
-                            </select>
-                        </div>
+                    <div class="col-md-6">
+                        <span class="showing-items-text"> Showing 1-12 of 36 products </span>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select form-select-sm sorting-select">
+                            <option> Default sorting </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" *ngIf="activeRoute.includes('/product-details')">
+            <div class="col-md-4 navigation">
+                <div class="m-3">
+                    <span> Shop </span> / <span> Product Details </span>
+                </div>
+            </div>
+            <div class="col-md-4 title">
+                <span class="title mt-3">
+                    {{ title }}
+                </span>  
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-end pr-3">
+                        <span class="next-product-text m-3"> Next Product </span>
+                        <i class="fa fa-arrow-left m-3"></i>
+                        <i class="fa fa-arrow-right m-3"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 </div>

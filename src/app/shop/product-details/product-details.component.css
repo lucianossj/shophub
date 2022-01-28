@@ -1,0 +1,47 @@
+
+.margin-box {
+    margin-top: -25%;
+}
+
+.box {
+    background-image: radial-gradient(circle, #FED997, #FED997, #FED997, #fcecd1, #fff);
+    border-radius: 40px;
+}
+
+.product-img {
+    background-color: #f8e0b7;
+    border-radius: 200px;
+    border-color: #fcf1df;
+    display: flex;
+    justify-content: center;
+    border-style: double;
+}
+
+.img-size {
+    width: 100%;
+}
+
+.product-price {
+    font-weight: bolder;
+}
+
+.color {
+    background-color: blue;
+    border-radius: 400px;
+    height: 25px;
+}
+
+.size {
+    background-color: #FED997;
+    border-radius: 5px;
+    border: 1px;
+    border-style: double;
+    border-color: #fcf1df;
+    height: 15%;
+    width: 15%;
+}
+
+.btn-add-cart {
+    font-weight: bolder;
+    width: 100% !important;
+}

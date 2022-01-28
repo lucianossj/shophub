@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouteService } from '../service/route.service';
 
 @Component({
   selector: 'app-topbar',
@@ -10,9 +11,15 @@ export class TopbarComponent implements OnInit {
   @Input()
   public title: string = '';
 
-  constructor() { }
+  constructor(
+    private routeService: RouteService
+  ) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+  }
+
+  get activeRoute(): string {
+    return this.routeService.activeRoute;
   }
 
 }

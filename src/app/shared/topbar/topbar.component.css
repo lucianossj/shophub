@@ -1,5 +1,5 @@
 .bar {
-    height: 200px;
+    height: 300px;
     background-image: linear-gradient(to bottom, #FDBE0B, #FED997);
     border-radius: 40px;
 }
@@ -23,6 +23,10 @@
 
 .showing-items-text {
     font-size: 10px;
+}
+
+.next-product-text {
+    
 }
 
 .sorting-select {
