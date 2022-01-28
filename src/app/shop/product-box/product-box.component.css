@@ -8,6 +8,14 @@
     border-radius: 35px;
 }
 
+.box:hover {
+    transform: scale(1.019);
+}
+
 .product-title {
     font-weight: bolder;
+}
+
+.product-img:hover {
+    transform: scale(1.2);
 }

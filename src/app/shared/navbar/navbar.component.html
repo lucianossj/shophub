@@ -9,19 +9,19 @@
         <div class="col-md-3">
             <div class="row mt-4">
                 <div
-                    class="col-md-3"
+                    class="col-md-3 bar-option"
                     (click)="redirectToHome()"
                     [ngClass]="{'route-active': verifyIsActive('/home')}"> Home </div>
                 <div
-                    class="col-md-3"
+                    class="col-md-3 bar-option"
                     (click)="redirectToShop()"
                     [ngClass]="{'route-active': verifyIsActive('/products')}"> Shop </div>
                 <div
-                    class="col-md-3"
+                    class="col-md-3 bar-option"
                     (click)="redirectToBlog()"
                     [ngClass]="{'route-active': verifyIsActive('/blog')}"> Blog </div>
                 <div
-                    class="col-md-3"
+                    class="col-md-3 bar-option"
                     (click)="redirectToContact()"
                     [ngClass]="{'route-active': verifyIsActive('/contact')}"> Contact </div>
             </div>
@@ -32,9 +32,10 @@
                     <span> $ 239.00 </span>
                 </div>
                 <div class="col-md-6">
-                    <div class="btn-shopcart primary-btn-color">
-                        <i class="fa fa-shopping-bag"></i>
-                    </div>
+                    <app-rounded-button
+                        class="d-flex justify-content-end"
+                        [faIcon]="'fa fa-shopping-bag'"
+                        [size]="50"></app-rounded-button>
                 </div>
             </div>
         </div>

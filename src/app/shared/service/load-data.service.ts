@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { LocalStorageKeysEnum } from '../enum/local-storage-keys.enum';
 import { Observable } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
+import { ProductModel } from '../model/product.model';
 
 @Injectable()
 export class LoadDataService {
@@ -11,12 +12,12 @@ export class LoadDataService {
     private http: HttpClient
   ) { }
 
-  private loadProductData(products: any[]): void {
+  private loadProductData(products: ProductModel[]): void {
     localStorage.setItem(LocalStorageKeysEnum.PRODUCTS, JSON.stringify(products));
   }
 
   public getProducts(): Observable<void> {
-    return this.http.get<any[]>('../../../assets/mocks/products.json')
+    return this.http.get<ProductModel[]>('../../../assets/mocks/products.json')
       .pipe(
         tap(products => this.loadProductData(products)),
         map(() => {})

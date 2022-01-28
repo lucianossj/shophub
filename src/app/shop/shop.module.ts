@@ -5,6 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ProductBoxComponent } from './product-box/product-box.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RelatedProductsComponent } from './related-products/related-products.component';
+import { ShopService } from './service/shop.service';
 
 
 
@@ -22,6 +23,9 @@ import { RelatedProductsComponent } from './related-products/related-products.co
   exports: [
     ListProductsComponent,
     ProductDetailsComponent
+  ],
+  providers: [
+    ShopService
   ]
 })
 export class ShopModule { }

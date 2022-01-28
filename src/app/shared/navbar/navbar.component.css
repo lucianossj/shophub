@@ -22,3 +22,7 @@
 .route-inactive {
     color: black;
 }
+
+.bar-option:hover {
+    transform: scale(1.2);
+}

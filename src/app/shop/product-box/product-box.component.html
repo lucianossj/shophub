@@ -12,22 +12,22 @@
         <div class="d-flex justify-content-center">
             <img
             class="product-img"
-            width="200"
-            src="https://images.tcdn.com.br/img/img_prod/790073/tenis_adidas_grandcourt_ee7968_177_1_20200807111214.png">
+            width="75%"
+            [src]="productImage">
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
             <span class="d-flex justify-content-center product-title text-primary">
-                Popular Shoe Trends
+                {{ product?.name }}
             </span>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <span class="d-flex justify-content-center product-title text-primary mb-4">
-                $239.00
+                $ {{ product?.price ? product.price : null}}
             </span>
         </div>
     </div>
