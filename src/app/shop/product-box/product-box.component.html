@@ -1,8 +1,14 @@
 <div class="container box">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-1">
+            <i class="fa fa-star text-warning d-flex justify-content-start mt-3 star-rating"></i>
+        </div>
+        <div class="col-md-1 mt-3 rating-font">
+            {{ product.rating }}
+        </div>
+        <div class="col-md-6 offset-4">
             <app-rounded-button
-            class="d-flex justify-content-end mt-2 mb-1"
+                class="d-flex justify-content-end mt-2 mb-1"
                 [faIcon]="'fa fa-shopping-bag'"
                 [size]="40"></app-rounded-button>
         </div>

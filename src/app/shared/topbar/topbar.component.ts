@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RouteService } from '../service/route.service';
 
 @Component({
@@ -11,6 +11,9 @@ export class TopbarComponent implements OnInit {
   @Input()
   public title: string = '';
 
+  @Output()
+  public sorted: EventEmitter<number> = new EventEmitter<number>();
+
   constructor(
     private routeService: RouteService
   ) { }
@@ -20,6 +23,10 @@ export class TopbarComponent implements OnInit {
 
   get activeRoute(): string {
     return this.routeService.activeRoute;
+  }
+
+  public sortBy(tst: string): void {
+    this.sorted.emit(Number(tst));
   }
 
 }

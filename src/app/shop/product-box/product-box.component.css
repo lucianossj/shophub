@@ -4,6 +4,14 @@
     border-radius: 5px;
 }
 
+.star-rating {
+    font-size: 20px;
+}
+
+.rating-font {
+    font-weight: bold;
+}
+
 .product-img {
     border-radius: 35px;
 }

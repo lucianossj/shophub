@@ -3,7 +3,7 @@
         "code": 123,
         "name": "Shoe ABC Air",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "price": 239.0,
+        "price": 259.19,
         "category": "Shoes",
         "rating": 3.9,
         "quantityReviewers": 3,
@@ -127,7 +127,7 @@
     },
     {
         "code": 987,
-        "name": "T-Shirt USA",
+        "name": "T-Shirt JKL",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "price": 239.0,
         "category": "Clothes",
@@ -178,7 +178,7 @@
     },
     {
         "code": 654,
-        "name": "T-Shirt Barcelona",
+        "name": "T-Shirt QWER",
         "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
         "price": 1000.5,
         "category": "Clothes",
@@ -213,7 +213,7 @@
     },
     {
         "code": 321,
-        "name": "T-Shirt Barcelona",
+        "name": "T-Shirt ZXY",
         "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
         "price": 50.29,
         "category": "Clothes",
