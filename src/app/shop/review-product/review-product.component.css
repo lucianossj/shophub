@@ -1,0 +1,15 @@
+
+
+.star-review {
+    font-size: 25px !important;
+}
+
+.star-checked {
+    color: gold;
+    transform: scale(1.2);
+}
+
+.star:hover {
+    color: gold;
+    transform: scale(1.2);
+}

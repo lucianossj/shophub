@@ -7,6 +7,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { RelatedProductsComponent } from './related-products/related-products.component';
 import { ShopService } from './service/shop.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ReviewProductComponent } from './review-product/review-product.component';
 
 
 
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ListProductsComponent,
     ProductBoxComponent,
     ProductDetailsComponent,
-    RelatedProductsComponent
+    RelatedProductsComponent,
+    ReviewProductComponent
   ],
   imports: [
     CommonModule,

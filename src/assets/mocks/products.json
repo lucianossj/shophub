@@ -5,6 +5,8 @@
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "price": 239.0,
         "category": "Shoes",
+        "rating": 3.9,
+        "quantityReviewers": 3,
         "images": [
             {
                 "src": "http://pngimg.com/uploads/boots/boots_PNG7813.png"
@@ -45,6 +47,8 @@
         "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
         "price": 159.99,
         "category": "Shoes",
+        "rating": 4,
+        "quantityReviewers": 5,
         "images": [
             {
                 "src": "https://i.pinimg.com/originals/8b/e1/38/8be1387cebf9a6710a0c2c8f6c978cb1.png"
@@ -88,6 +92,8 @@
         "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
         "price": 129.9,
         "category": "Shoes",
+        "rating": 2,
+        "quantityReviewers": 2,
         "images": [
             {
                 "src": "https://www.pngall.com/wp-content/uploads/5/Brown-Men-Shoes-Transparent.png"
@@ -125,6 +131,8 @@
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "price": 239.0,
         "category": "Clothes",
+        "rating": 5,
+        "quantityReviewers": 10,
         "images": [
             {
                 "src": "https://assets.bigcartel.com/product_images/255896750/tshirt.png?auto=format&fit=max&w=900"
@@ -174,6 +182,8 @@
         "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
         "price": 1000.5,
         "category": "Clothes",
+        "rating": 1,
+        "quantityReviewers": 3,
         "images": [
             {
                 "src": "https://cdn.shopify.com/s/files/1/0017/9512/9395/products/Acid_Wash_Shirt_-_Darkolive_900x.png?v=1588567841"
@@ -207,6 +217,8 @@
         "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
         "price": 50.29,
         "category": "Clothes",
+        "rating": 4,
+        "quantityReviewers": 4,
         "images": [
             {
                 "src": "https://faithnomore.kfu.store/media/catalog/product/cache/c2f36e5f9e0357e3dd87c32dc889b09a/6/d/6d7fbbbe9106597139ccf738ba069f27b2d5d236de5f4af3bf3260106f7dc714.jpeg"

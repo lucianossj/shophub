@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-3">
+        <span> Review: </span>
+        
+    </div>
+    <div class="text-white col-md-9">
+        <span (click)="rate(1)" [ngClass]="{'star-checked': verifyRating(1)}">
+            <i class="fa fa-star star-review star"></i>
+        </span>
+        <span (click)="rate(2)" [ngClass]="{'star-checked': verifyRating(2)}">
+            <i class="fa fa-star star-review star"></i>
+        </span>
+        <span (click)="rate(3)" [ngClass]="{'star-checked': verifyRating(3)}">
+            <i class="fa fa-star star-review star"></i>
+        </span>
+        <span (click)="rate(4)" [ngClass]="{'star-checked': verifyRating(4)}">
+            <i class="fa fa-star star-review star"></i>
+        </span>
+        <span (click)="rate(5)" [ngClass]="{'star-checked': verifyRating(5)}">
+            <i class="fa fa-star star-review star"></i>
+        </span>
+    </div>
+</div>

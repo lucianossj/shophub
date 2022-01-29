@@ -19,6 +19,7 @@ export class ShopMapper {
             .sizes(product.sizes)
             .quantity(quantity)
             .totalPrice(quantity * product.price)
+            .rating(product.rating)
         .build();
     }
 

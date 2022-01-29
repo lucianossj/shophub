@@ -13,5 +13,6 @@ export class ProductModel {
         public price?: number,
         public reviewNote?: number,
         public sizes?: SizeModel[],
+        public rating?: number
     ) {}
 }

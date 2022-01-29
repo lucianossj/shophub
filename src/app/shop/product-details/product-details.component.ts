@@ -61,6 +61,10 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
       .forEach(image => image.selected = false);
   }
 
+  public setRating(rating: number): void {
+    this.product.rating = rating;
+  }
+
   public addToCart(): void {
     this.quantity = this.qtyForm.getRawValue().qty;
     this.shopService.addProductToShoppingCart(this.product, this.quantity);
