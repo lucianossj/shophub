@@ -1,8 +1,10 @@
-<span class="d-flex justify-content-center totalQty pb-2" *ngIf="totalQty"> {{ totalQty }} </span>
-<div
-    class="rounded-btn primary-btn-color"
-    [style.width.px]="size"
-    [style.heigth.px]="size"
-    [style.padding.px]="size/5">
-    <i [class]="faIcon" [style.font-size.px]="size / 2"></i>
+<div (click)="buttonPressed()">
+    <span class="d-flex justify-content-center totalQty pb-2" *ngIf="totalQty"> {{ totalQty }} </span>
+    <div
+        class="rounded-btn primary-btn-color"
+        [style.width.px]="size"
+        [style.heigth.px]="size"
+        [style.padding.px]="size/5">
+        <i [class]="faIcon" [style.font-size.px]="size / 2"></i>
+    </div>
 </div>

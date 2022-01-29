@@ -34,6 +34,10 @@ export class NavbarComponent implements OnInit {
     this.routeService.redirectToContact();
   }
 
+  public redirectToCart(): void {
+    this.routeService.redirectToCart();
+  }
+
   public verifyIsActive(route: string): boolean {
     return this.routeService.activeRoute === route;
   }

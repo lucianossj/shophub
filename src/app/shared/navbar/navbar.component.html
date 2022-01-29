@@ -33,6 +33,7 @@
                 </div>
                 <div class="col-md-6">
                     <app-rounded-button
+                        (wasPressed)="redirectToCart()"
                         class="d-flex justify-content-end"
                         [faIcon]="'fa fa-shopping-bag'"
                         [size]="50"

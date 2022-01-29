@@ -34,6 +34,10 @@ export class RouteService {
     this.router.navigateByUrl(`/contact`);
   }
 
+  public redirectToCart(): void {
+    this.router.navigateByUrl(`/shopping-cart`);
+  }
+
   public redirectToProductDetails(code: number): void {
     this.router.navigateByUrl(`/product-details/${code}`);
   }

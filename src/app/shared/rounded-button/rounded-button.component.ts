@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-rounded-button',
@@ -16,9 +16,16 @@ export class RoundedButtonComponent implements OnInit {
   @Input()
   public totalQty: number = 0
 
+  @Output()
+  public wasPressed: EventEmitter<void> = new EventEmitter<void>();
+
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+  }
+
+  public buttonPressed(): void {
+    this.wasPressed.emit();
   }
 
 }

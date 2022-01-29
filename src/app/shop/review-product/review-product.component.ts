@@ -10,7 +10,7 @@ export class ReviewProductComponent implements OnInit {
   @Input()
   public reviewRating: number = 1;
 
-  @Output('wasRated')
+  @Output()
   public wasRated: EventEmitter<number> = new EventEmitter<number>();
 
   constructor() { }

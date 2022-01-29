@@ -11,6 +11,8 @@ import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeModule,
     ShopModule,
     BlogModule,
-    ContactModule
+    ContactModule,
+    ShoppingCartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
