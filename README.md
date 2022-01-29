@@ -21,6 +21,9 @@ http://shophub-ilegra-com.umbler.net/#/shopping-cart
 - **Contacts**: tela de contato (não implementada);
 - **Navbar**: barra superior para navegação entre módulos e visualização de valor total do carrinho de compras.
 
+## Considerações sobre a aplicação
+Conforme solicitado no teste, todos os dados de cliente e de produtos estão mockados em arquivos JSON que são lidos na abertura da aplicação. E para persistência dos mesmos, foi utilizado a Local Storage do browser.
+
 ## Considerações sobre o teste
 - Foram realizadas todas as implementações solicitadas no teste, com exceção dos testes e2e;
 - Outra pendência foi responsividade que não ficou como esperado.
