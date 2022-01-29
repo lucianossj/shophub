@@ -1,32 +1,15 @@
 
-<div class="container">
+<div class="container p-5">
     <div class="row">
-        <div class="col-md-8">
-            <h3 class="d-flex justify-content-start"> Related Products </h3>
-        </div>
-        <div class="col-md-4">
-            <div class="row mt-3 d-flex justify-content-end">
-                <div class="col-md-6">
-                    <span class="showing-items-text"> Showing 1-12 of 36 products </span>
-                </div>
-                <div class="col-md-6">
-                    <select class="form-select form-select-sm sorting-select">
-                        <option> Default sorting </option>
-                    </select>
-                </div>
-            </div>
+        <div class="col-md-12">
+            <h3 class="d-flex justify-content-center"> Related Products </h3>
         </div>
     </div>
     
     <div class="row p-4 margin-boxes">
-        <div class="col-md-4 mt-2">
-            <app-product-box></app-product-box>
-        </div>
-        <div class="col-md-4 mt-2">
-            <app-product-box></app-product-box>
-        </div>
-        <div class="col-md-4 mt-2">
-            <app-product-box></app-product-box>
+        <div class="col-md-6 mt-2" *ngFor="let product of relatedProducts">
+            <app-product-box [product]=product
+                (click)="seeProductDetails(product.code)"></app-product-box>
         </div>
     </div>
 </div>

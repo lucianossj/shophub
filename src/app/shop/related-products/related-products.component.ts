@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ProductModel } from 'src/app/shared/model/product.model';
+import { ShopService } from '../service/shop.service';
 
 @Component({
   selector: 'app-related-products',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RelatedProductsComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  public category: string;
 
-  ngOnInit(): void {
+  @Input()
+  public code: number;
+
+  constructor(
+    private shopService: ShopService
+  ) { }
+
+  public ngOnInit(): void {
+  }
+
+  public seeProductDetails(code: number): void {
+    this.shopService.redirectToProductDetails(code);
+  }
+
+  get relatedProducts(): ProductModel[] {
+    return this.shopService.products.filter(
+      product => product.category == this.category && product.code != this.code
+    )
   }
 
 }

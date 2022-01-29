@@ -24,10 +24,12 @@ export class ShopService {
 
     localStorage.setItem(LocalStorageKeysEnum.SHOPPING_CART, JSON.stringify(cart));
     this.routeService.redirectToShop();
+    window.scroll(0,0);
   }
 
   public redirectToProductDetails(code: number): void {
     this.routeService.redirectToProductDetails(code);
+    window.scroll(0,0);
   }
 
   get params(): Observable<any> {
