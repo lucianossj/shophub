@@ -2,17 +2,28 @@ import { Injectable } from '@angular/core';
 import { LocalStorageKeysEnum } from 'src/app/shared/enum/local-storage-keys.enum';
 import { CartProductModel } from 'src/app/shared/model/cart-product.model';
 import { CartModel } from 'src/app/shared/model/cart.model';
+import { RouteService } from 'src/app/shared/service/route.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShoppingCartService {
 
-  constructor() { }
+  constructor(
+    private routeService: RouteService
+  ) { }
 
   get cart(): CartModel {
     const json: string = localStorage.getItem(LocalStorageKeysEnum.SHOPPING_CART);
     return JSON.parse(json.toString());
+  }
+
+  public checkout(): void {
+    const cart: CartModel = new CartModel();
+    cart.products = [];
+    cart.totalPrice = 0;
+    localStorage.setItem(LocalStorageKeysEnum.SHOPPING_CART, JSON.stringify(cart));
+    this.routeService.redirectToHome();
   }
 
   public updateLocalStorage(product: CartProductModel): void {

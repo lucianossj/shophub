@@ -95,10 +95,18 @@
             </div>
         </div>
     </div>
-    <div class="container box-cart-2">
+    <div class="box-cart-2 py-5">
         <div class="row">
-            <div class="col-md-12">
-                <h1>tst</h1>
+            <div class="col-md-2">
+                <h5> Subtotal: </h5>
+                <div class="row">
+                    <div class="col-md-12">
+                        {{ cart.totalPrice | currency }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 d-flex justify-content-end">
+                <button class="btn btn-lg btn-primary w-50" (click)="checkout()"> CHECKOUT </button>
             </div>
         </div>
     </div>

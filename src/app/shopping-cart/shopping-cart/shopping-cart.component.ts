@@ -3,6 +3,7 @@ import { CartProductModel } from 'src/app/shared/model/cart-product.model';
 import { CartModel } from 'src/app/shared/model/cart.model';
 import { ColorModel } from 'src/app/shared/model/color.model';
 import { SizeModel } from 'src/app/shared/model/size.model';
+import { AlertService } from 'src/app/shared/service/alert.service';
 import { ShoppingCartService } from '../service/shopping-cart.service';
 
 @Component({
@@ -15,11 +16,17 @@ export class ShoppingCartComponent implements OnInit {
   public cart: CartModel;
 
   constructor(
-    private shoppingCartService: ShoppingCartService
+    private shoppingCartService: ShoppingCartService,
+    private alertService: AlertService
   ) { }
 
   public ngOnInit(): void {
     this.getCart();
+  }
+
+  public checkout(): void {
+    this.shoppingCartService.checkout();
+    this.alertService.success('Thank you for your order.');
   }
 
   public getCart(): void {
@@ -80,6 +87,7 @@ export class ShoppingCartComponent implements OnInit {
 
   private updateLocalStorage(product: CartProductModel): void {
     this.shoppingCartService.updateLocalStorage(product);
+    this.getCart();
   }
 
 
